@@ -1,0 +1,2 @@
+# SnipeNaturalSelectionTests
+Test code for the following program. The purpose of the program will be to allow snipes to pair up with one another, pass on traits to their children, and let those children endure environmental conditions to simulate natural selection. After simulating 200 years of snipe development, we will observe the final population of snipes (relative to a starting population of 300), and look at all the different ways snipes died over this time span.
