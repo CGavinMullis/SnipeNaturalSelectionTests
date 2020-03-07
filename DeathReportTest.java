@@ -31,6 +31,9 @@ class DeathReportTest {
         otherDeathReport = new DeathReport();
     }
 
+    /**
+     * Tests getters and setters for year variable
+     */
     void yearTest()
     {
         for(Integer i : years) {
@@ -39,6 +42,9 @@ class DeathReportTest {
         }
     }
 
+    /**
+     * Tests getters and setters for age variable
+     */
     void ageTest()
     {
         for(Integer i : ages) {
@@ -47,6 +53,9 @@ class DeathReportTest {
         }
     }
 
+    /**
+     * Tests getters and setters for Cause of Death
+     */
     void causeTest()
     {
         deathReport.setCause(predation);

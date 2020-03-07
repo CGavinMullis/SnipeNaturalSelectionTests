@@ -1,7 +1,5 @@
 import org.junit.jupiter.api.Test;
 
-import java.util.stream.IntStream;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -10,38 +8,57 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Gavin Mullis
  */
 class EnvironmentTest {
-    Environment plentifulEnvironment;
-    Environment dangerousEnvironment;
-
+    Environment environment;
 
     /**
-     * Before each test, create a plentiful Environment and a dangerous Environment.
+     * Before each test, create an Environment
      */
     @org.junit.jupiter.api.BeforeEach
     public void beforeEach() {
-        plentifulEnvironment = new Environment(true);
-        dangerousEnvironment = new Environment(false);
+        environment = new Environment();
     }
 
+    /**
+     * Tests getters and setters for isPlentiful Variable
+     */
     void plentifulTest()
     {
-        assertTrue(plentifulEnvironment.isPlentiful());
-        assertFalse(dangerousEnvironment.isPlentiful());
+        environment.setPlentiful(false);
+        assertFalse(environment.getPlentiful());
+
+        environment.setPlentiful(true);
+        assertTrue(environment.getPlentiful());
     }
 
+    /**
+     * Tests getters and setters for isDangerous Variable
+     */
     void dangerousTest()
     {
-        assertFalse(plentifulEnvironment.isDangerous());
-        assertTrue(dangerousEnvironment.isDangerous());
+        environment.setDangerous(false);
+        assertFalse(environment.getDangerous());
+
+        environment.setDangerous(true);
+        assertTrue(environment.getDangerous());
     }
 
     @org.junit.jupiter.api.Test
-    void isPlentiful() {
+    void setPlentiful() {
         plentifulTest();
     }
 
     @org.junit.jupiter.api.Test
-    void isDangerous() {
+    void setDangerous() {
+        dangerousTest();
+    }
+
+    @org.junit.jupiter.api.Test
+    void getPlentiful() {
+        plentifulTest();
+    }
+
+    @org.junit.jupiter.api.Test
+    void getDangerous() {
         dangerousTest();
     }
 }

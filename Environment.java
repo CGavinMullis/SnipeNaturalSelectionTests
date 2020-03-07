@@ -1,24 +1,25 @@
 public class Environment {
-    boolean safe;
+    boolean isPlentiful, isDangerous;
 
-    public Environment(boolean safe)
+    public Environment()
     {
-        this.safe = safe;
+        this.isPlentiful = true;
+        this.isDangerous = true;
     }
 
-    public boolean isPlentiful()
-    {
-        if(this.safe)
-            return true;
-        else
-            return false;
+    public void setPlentiful(boolean plentiful) {
+        this.isPlentiful = plentiful;
     }
 
-    public boolean isDangerous()
-    {
-        if(this.safe)
-            return false;
-        else
-            return true;
+    public void setDangerous(boolean dangerous) {
+        this.isDangerous = dangerous;
+    }
+
+    public boolean getPlentiful() {
+        return this.isPlentiful;
+    }
+
+    public boolean getDangerous() {
+        return this.isDangerous;
     }
 }
