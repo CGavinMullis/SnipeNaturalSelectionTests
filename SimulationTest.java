@@ -1,5 +1,8 @@
 import java.util.stream.IntStream;
 
+import edu.uah.cs.cs321.ed.Simulation;
+import edu.uah.cs.cs321.ed.Environment;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -20,7 +23,20 @@ class SimulationTest {
         testSim = new Simulation();             // initialize new simulation
         numYears = new int[]{200,400,600,800};  // set increments of years to run the simulation
         // will update environments according to code to test
-        // environments = new Environment[]{safe&plentiful,unsafe&plentiful,safe&notPlentiful,unsafe&notPlentiful}  // set different environments
+       // environments = new Environment[]{safe&plentiful,unsafe&plentiful,safe&notPlentiful,unsafe&notPlentiful}  // set different environments
+        environments[0] = new Environment();
+        environments[0].isPlentiful = true;
+        environments[0].isDangerous = true;
+
+        environments[1] = new Environment();
+        environments[1].isPlentiful = true;
+        environments[1].isDangerous = false;
+
+        environments[2] = new Environment();
+        environments[2].isPlentiful = false;
+        environments[2].isDangerous = true;
+
+        environments[3] = new Environment();
     }
 
     /**
