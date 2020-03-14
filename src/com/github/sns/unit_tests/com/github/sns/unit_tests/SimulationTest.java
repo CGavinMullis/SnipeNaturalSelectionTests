@@ -1,7 +1,7 @@
-//package com.github.sns.unit_tests;
+//import java.util.stream.IntStream;
 //
-//import edu.uah.cs.cs321.braden.Environment;
 //import edu.uah.cs.cs321.braden.Simulation;
+//import edu.uah.cs.cs321.braden.Environment;
 //
 //import static org.junit.jupiter.api.Assertions.*;
 //
@@ -10,7 +10,6 @@
 // *
 // * @author Brianna Bell
 // */
-//
 //class SimulationTest {
 //    Simulation testSim;             // simulation to test
 //    int[] numYears;                 // array of number of years the simulation will run
@@ -24,7 +23,7 @@
 //        testSim = new Simulation();             // initialize new simulation
 //        numYears = new int[]{200,400,600,800};  // set increments of years to run the simulation
 //        // will update environments according to code to test
-//       // environments = new com.github.sns.unit_tests.Environment[]{safe&plentiful,unsafe&plentiful,safe&notPlentiful,unsafe&notPlentiful}  // set different environments
+//        // environments = new Environment[]{safe&plentiful,unsafe&plentiful,safe&notPlentiful,unsafe&notPlentiful}  // set different environments
 //        environments[0] = new Environment();
 //        environments[0].isPlentiful = true;
 //        environments[0].isDangerous = true;
