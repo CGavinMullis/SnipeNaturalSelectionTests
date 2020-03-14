@@ -1,3 +1,5 @@
+package edu.uah.cs.cs321.ed;
+
 /**
 *<h1>Snipe Class</h1>
 * Creates a snipe object. This object will represent the fictional 
