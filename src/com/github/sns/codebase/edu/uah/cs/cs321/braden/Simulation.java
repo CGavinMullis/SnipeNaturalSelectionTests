@@ -166,4 +166,9 @@ public class Simulation {
     public List<DeathReport> getDeaths() {
         return deaths;
     }
+
+    public List<Snipe> GetSnipes()
+    {
+        return snipes;
+    }
 }
